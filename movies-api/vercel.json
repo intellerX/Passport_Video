@@ -1,0 +1,12 @@
+{
+    "name": "video",
+    "version": 2,
+    "builds": [{ "src": "index.js" , "use": "@vercel/node"}],
+    "routes": [{"src":"/(.*)", "dest": "/index.js"}],
+    "env": {
+        "DB_USER": "@videos-db-user",
+        "DB_PASSWORD": "@videos-db-password",
+        "DB_HOST": "@videos-db-host",
+        "DB_NAME": "@videos-db-name"
+    }
+}
